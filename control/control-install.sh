@@ -25,5 +25,5 @@ script_path=$(dirname "$(readlink -f "$0")")
 cd $script_path
 mv control-* ~
 cd ~
-rm -rf $script_path
-rm -rf control-install.sh
+#rm -rf $script_path
+#rm -rf control-install.sh

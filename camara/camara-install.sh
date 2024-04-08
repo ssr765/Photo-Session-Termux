@@ -28,5 +28,5 @@ script_path=$(dirname "$(readlink -f "$0")")
 cd $script_path
 mv camara-* ~
 cd ~
-rm -rf $script_path
-rm -rf camara-install.sh
+#rm -rf $script_path
+#rm -rf camara-install.sh
