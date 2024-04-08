@@ -2,7 +2,7 @@
 
 # --- Dependencias
 pkg update
-pkg install termux-api sshd iproute2 -y
+pkg install termux-api openssh iproute2 -y
 
 # --- chmod
 chmod +x camara-ip.sh
