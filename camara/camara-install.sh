@@ -21,7 +21,7 @@ echo "alias detener='kill -9 $(pgrep sshd)'" >> ~/.bashrc
 mkdir ~/capturas
 
 # --- Comprobar permisos
-termux-camera-info
+termux-camera-info > /dev/null
 
 # --- Mover los archivos a la raíz
 script_path=$(dirname "$(readlink -f "$0")")
