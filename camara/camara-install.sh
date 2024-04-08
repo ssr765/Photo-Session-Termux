@@ -1,13 +1,15 @@
 #!/bin/bash
 
+# Ir al directorio del script
+script_path=$(dirname "$(readlink -f "$0")")
+cd $script_path
+
 # --- Dependencias
 pkg update
 pkg install termux-api openssh iproute2 -y
 
 # --- chmod
-chmod +x camara-ip.sh
-chmod +x camara-fotos.sh
-chmod +x camara-guardar.sh
+chmod +x *
 
 # --- Comandos
 # obtenerip
@@ -24,9 +26,7 @@ mkdir ~/capturas
 termux-camera-info > /dev/null
 
 # --- Mover los archivos a la raíz
-script_path=$(dirname "$(readlink -f "$0")")
-cd $script_path
 mv camara-* ~
 cd ~
-#rm -rf $script_path
-#rm -rf camara-install.sh
+#rm -rf ~/Photo-Session-Termux
+#rm -rf ~/camara-install.sh

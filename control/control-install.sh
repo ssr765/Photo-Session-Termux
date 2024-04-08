@@ -1,14 +1,15 @@
 #!/bin/bash
 
+# Ir al directorio del script
+script_path=$(dirname "$(readlink -f "$0")")
+cd $script_path
+
 # --- Dependencias
 pkg update
 pkg install termux-api -y
 
 # --- chmod
-chmod +x control-conf.sh
-chmod +x control-fotos.sh
-chmod +x control-ayuda.sh
-chmod +x control-ssh.sh
+chmod +x *
 
 # --- Comandos
 # fotoip [ip]
@@ -21,9 +22,7 @@ echo "alias foto=./control-fotos.sh" >> ~/.bashrc
 echo "alias ayuda=./control-ayuda.sh" >> ~/.bashrc
 
 # --- Mover los archivos a la raíz
-script_path=$(dirname "$(readlink -f "$0")")
-cd $script_path
 mv control-* ~
 cd ~
-#rm -rf $script_path
-#rm -rf control-install.sh
+#rm -rf ~/Photo-Session-Termux
+#rm -rf ~/control-install.sh
