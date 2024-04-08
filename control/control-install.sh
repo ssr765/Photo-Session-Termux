@@ -13,13 +13,13 @@ chmod +x *
 
 # --- Comandos
 # fotoip [ip]
-echo "alias fotoip=./control-conf.sh" >> ~/.bashrc
+echo "alias fotoip=~/control-conf.sh" >> ~/.bashrc
 # foto [num_fotos]
-echo "alias foto=./control-fotos.sh" >> ~/.bashrc
+echo "alias foto=~/control-fotos.sh" >> ~/.bashrc
 # flash (TODO)
 
 # ayuda
-echo "alias ayuda=./control-ayuda.sh" >> ~/.bashrc
+echo "alias ayuda=~/control-ayuda.sh" >> ~/.bashrc
 
 # --- Mover los archivos a la raíz
 mv control-* ~

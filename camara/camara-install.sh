@@ -13,7 +13,7 @@ chmod +x *
 
 # --- Comandos
 # obtenerip
-echo "alias obtenerip=./camara-ip.sh" >> ~/.bashrc
+echo "alias obtenerip=~/camara-ip.sh" >> ~/.bashrc
 # comenzar
 echo "alias comenzar=sshd" >> ~/.bashrc
 # detener
