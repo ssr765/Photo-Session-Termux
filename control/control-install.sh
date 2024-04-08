@@ -24,5 +24,5 @@ echo "alias ayuda=~/control-ayuda.sh" >> ~/.bashrc
 # --- Mover los archivos a la raíz
 mv control-* ~
 cd ~
-#rm -rf ~/Photo-Session-Termux
-#rm -rf ~/control-install.sh
+rm -rf ~/pst
+rm -rf ~/control-install.sh

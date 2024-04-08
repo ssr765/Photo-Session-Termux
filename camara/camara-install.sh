@@ -28,5 +28,5 @@ termux-camera-info > /dev/null
 # --- Mover los archivos a la raíz
 mv camara-* ~
 cd ~
-#rm -rf ~/Photo-Session-Termux
-#rm -rf ~/camara-install.sh
+rm -rf ~/pst
+rm -rf ~/camara-install.sh
