@@ -31,4 +31,4 @@ cd ~
 rm -rf ~/pst
 rm -rf ~/control-install.sh
 
-ehco "[Control] Instalación completada."
+echo "[Control] Instalación completada."
