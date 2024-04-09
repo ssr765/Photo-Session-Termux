@@ -1,7 +1,7 @@
 #!/bin/bash
 
 USER=$(whoami)
-IP=$(ip a | grep "inet 192" | awk '{print substr($2, 1, length($2)-3)}')
+IP=$(ifconfig | grep "inet 192" | awk '{print substr($2, 1, length($2)-3)}')
 
 if [ -n "$IP" ]; then
     termux-toast -b#f562ae "Para configurar la conexión, pon el siguiente comando en el dispositivo de control: fotoip $USER@$IP"
