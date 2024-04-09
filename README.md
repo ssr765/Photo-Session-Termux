@@ -22,7 +22,7 @@ git clone https://github.com/ssr765/Photo-Session-Termux pst
 4. Dar permisos de ejecución a los scripts.
 
 ```sh
-chmod +x pst/*
+chmod -R +x pst/*
 ```
 
 5. Ejecutar el instalador.
